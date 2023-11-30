@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* static classes */
+
+.bg-color-600 {
+    background-color: #7F56D9;
+    color: #fff;
+}
+
+.bg-color-800 {
+    background-color: #53389E;
+    color: #fff;
+}
+
+.color {
+    color: #7F56D9;
+}
+
+.fw-600{
+    font-weight: 600;;
+}
+
+/*  */
+
+.main{
+    margin-top: 25px;
+    border-radius: var(--spacing-3xl, 24px);
+}

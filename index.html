@@ -10,56 +10,446 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="py-4 d-flex justify-content-between">
-            <div class="logo-block">
-                <img src="./img/Logo Full.svg" alt="Logo Full">
-            </div>
-            <div>
-                <button class="btn color fw-600">Log In</button>
-                <button class="btn fw-600 bg-color-600">Sign Up</button>
-            </div>
-        </header>
-        <main class="bg-color-800 main px-2">
-            <div class="row justify-content-center">
-                <div class="col-md-7 text-center">
-                    <h1 class="fw-600 mt-5 mb-1 display-2">
-                        Ready to Roll Real Estate CRM, right out of the box.
-                    </h1>
+    <div id="mainSite">
+        <div class="container">
+            <header class="py-4 d-flex justify-content-between">
+                <div class="logo-block">
+                    <img src="./img/Logo Full.svg" alt="Logo Full">
                 </div>
-                <div class="col-md-8 text-center">
-                    <p style="color : #E9D7FE;" class="lead fs-5">Powerful, automated self-serve product to help you, prospect, engage, and
-                        convert prospects into
-                        clients. Backed by two years of research and development and eighteen years of capital markets
-                        experience.</p>
+                <div>
+                    <button id="buttonLogin" class="btn color fw-600">Log In</button>
+                    <button id="buttonSignUp" class="btn fw-600 bg-color-600">Sign Up</button>
                 </div>
-                <div class="col-lg-5 d-flex flex-wrap justify-content-center my-4">
-                    <input type="email" class="form-control w-50 me-3 px-3 py-2" placeholder="Enter your email">
-                    <button class="btn fw-600 bg-color-600">Get started</button>
-                    <p style="color : #E9D7FE; font-size: 14px;" class="">We care about your data in our <span
-                            class="text-decoration-underline">privacy policy.</span></p>
+            </header>
+            <main class="bg-color-800 main px-2">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h1 class="fw-600 mt-5 mb-1 header-title">
+                            Ready to Roll Real Estate CRM, right out of the box.
+                        </h1>
+                    </div>
+                    <div class="col-md-8 text-center">
+                        <p style="color : #E9D7FE;" class="lead fs-5 header-info">Powerful, automated self-serve product
+                            to
+                            help you, prospect, engage, and
+                            convert prospects into
+                            clients. Backed by two years of research and development and eighteen years of capital
+                            markets
+                            experience.</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center gap-2 mt-4">
+                        <div class="user-info">
+                            <input type="email" class="user-email form-control" placeholder="Enter your email">
+                            <p style="color : #E9D7FE; font-size: 14px;" class="">We care about your data in our <span
+                                    class="text-decoration-underline">privacy policy.</span></p>
+                        </div>
+                        <div class="">
+                            <button class="email-button">Get started</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row pt-5 d-flex justify-content-center">
-                <div class="col-10 col-md-8 pt-5 position-relative">
-                    <img style="top:-40px; border-radius: 20px; z-index: 1;" class="img-fluid position-absolute shadow"
-                        src="./img/LP Search Result 1.svg" alt="LP Search Result 1">
-                    <img style="top: 150px; right: -200px; z-index: 0;" class="position-absolute img-fluid d-none d-lg-block"
-                        src="./img/Line pattern2.png" alt="Line pattern2">
+                <div class="row pt-5 d-flex justify-content-center">
+                    <div class="col-10 col-md-8 pt-5 position-relative">
+                        <img style="top:-40px; border-radius: 20px; z-index: 1;"
+                            class="img-fluid position-absolute shadow" src="./img/LP Search Result 1.svg"
+                            alt="LP Search Result 1">
+                        <img style="top: 150px; right: -200px; z-index: 0;"
+                            class="position-absolute img-fluid d-none d-lg-block" src="./img/Line pattern2.png"
+                            alt="Line pattern2">
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <img style="top: 500px; left: -30px;" class="position-absolute img-fluid d-none d-lg-block" src="./img/Line pattern1.png"
-            alt="Line pattern1">
+            <img style="top: 500px; left: -30px;" class="position-absolute img-fluid d-none d-lg-block"
+                src="./img/Line pattern1.png" alt="Line pattern1">
 
-        <section style="margin-top: 550px;" class="d-flex flex-column justify-content-center align-items-center">
-            <p>Value</p>
-            <h1>Get more value from your tools</h1>
-            <p>Make more connections in less time by using Atterra’s automated processes to find the best connection
-                point for a prospect.</p>
-        </section>
+            <section style="margin-top: 550px;" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="row d-flex justify-content-center mb-5">
+                    <div class="col-8 text-center">
+                        <p class="brands d-inline">Value</p>
+                        <h1 class="fw-600 brands-title">Get more value from your tools</h1>
+                        <p style="color: #475467;">Make more connections in less time by using Atterra’s automated
+                            processes
+                            to find the best connection
+                            point for a prospect.</p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 60px;" class="row d-flex justify-content-center mt-3">
+                    <div class="col-10 text-center">
+                        <p class="brands d-inline">Features</p>
+                        <h1 class="fw-600 brands-title">Cutting-edge features for busy real estate professionals</h1>
+                        <p style="color: #475467;">Powerful automated updates, complex algorithms and an intuitive user
+                            interface help filter the noise.</p>
+                    </div>
+                </div>
+                <div class="row px-2 more-block">
+                    <div class="col-4 text-center">
+                        <img src="img/Featured icon.png" class="img-fluid more-img" alt="Featured">
+                        <h6 class="more-title">Automated Updates</h6>
+                        <p class="more-info">Underlying real estate data updates on a daily basis providing users with
+                            fresh
+                            intelligence on the rapidly changing market landscape.</p>
+                        <a href="" class="more-link">Learn more <span><img src="./img/Icon.svg" alt="Icon"></span></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="img/Featured icon (1).png" class="img-fluid more-img" alt="Featured">
+                        <h6 class="more-title">Deliver instant answers</h6>
+                        <p class="more-info">An all-in-one research, contact and contact relationship management tool to
+                            simply the fragmented tool set of the modern real estate professional.</p>
+                        <a href="" class="more-link">Learn more <span><img src="./img/Icon.svg" alt="Icon"></span></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="img/Featured icon (2).png" class="img-fluid more-img" alt="Featured">
+                        <h6 class="more-title">Perfect for Individuals and Teams</h6>
+                        <p class="more-info">Work as an individual or as part of a team. Use the ability to connect with
+                            other users, internal or external to your organization to do more deals.</p>
+                        <a href="" class="more-link">Learn more <span><img src="./img/Icon.svg" alt="Icon"></span></a>
+                    </div>
+                </div>
+            </section>
+            <section class="free-trial d">
+                <h1>Start your 30-day free trial</h1>
+                <p>See how Atterra can simplify your prospecting process today!</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-1">Learn more</button>
+                    <button class="btn btn-2">Get started</button>
+                </div>
+            </section>
+            <section class="pricing d-flex flex-column justify-content-center align-items-center">
+                <div style="margin-bottom: 60px;" class="row d-flex justify-content-center mt-3">
+                    <div class="col text-center">
+                        <p class="brands d-inline">Pricing</p>
+                        <h1 class="fw-600 brands-title">Plans that fit your scale</h1>
+                        <p style="color: #475467;">Simple, transparent pricing that grows with you. Try any plan free
+                            for 30
+                            days.</p>
+                    </div>
+                </div>
+
+                <div style="gap: 32px;" class="row">
+                    <div class="col pricing-block">
+                        <div class="pricing-block-title d-flex">
+                            <div class="">
+                                <h1>Individual Plan</h1>
+                                <p>Our most popular plan for solo real estate professionals</p>
+                            </div>
+                            <div class="">
+                                <img src="./img/Price.png" alt="Price">
+                            </div>
+                        </div>
+
+                        <div class="pricing-block-info">
+                            <h1>FEATURES</h1>
+                            <p>Everything in our <span>free plan</span> plus....</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="info-checks">
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Access to basic features</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Basic reporting + analytics</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Up to 10 individual users</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>20GB individual data</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Basic chat support</p>
+                                    </div>
+                                </div>
+                                <div class="info-checks">
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Attend events</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Automatic updates</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Backup your account</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Audit log and notes</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Feature requests</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-block-footer">
+                            <button>Get started</button>
+                        </div>
+                    </div>
+                    <div class="col pricing-block">
+                        <div class="pricing-block-title d-flex">
+                            <div>
+                                <h1>Business Plan <span class="brands">Popular</span></h1>
+                                <p>Perfect for teams or larger organizations.</p>
+                            </div>
+                            <div class="">
+                                <img src="./img/Price (1).png" alt="Price">
+                            </div>
+                        </div>
+
+                        <div class="pricing-block-info">
+                            <h1>FEATURES</h1>
+                            <p>Everything in our <span>basic plan</span> plus....</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="info-checks">
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>200+ integrations</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Advanced reporting</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Up to 20 individual users</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>40GB individual data</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Priority chat support</p>
+                                    </div>
+                                </div>
+                                <div class="info-checks">
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Advanced custom fields</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Audit log and data history</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Backup your account</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>Personalised service</p>
+                                    </div>
+                                    <div class="checks">
+                                        <img src="./img/Check icon.svg" alt="Check">
+                                        <p>+ many more...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-block-footer">
+                            <button>Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <div class="question-title">
+                            <h1>Frequently asked questions</h1>
+                            <p>Everything you need to know about the product and billing.</p>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>Is there a free trial available?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>Can I change my plan later?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>What is your cancellation policy?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>Can other info be added to an invoice?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>How does billing work?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="question-block">
+                                    <h2>How does billing work?</h2>
+                                    <div class="question-block-img">
+                                        <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                        free,
+                                        personalized 30-minute onboarding call to get you up and running as soon as
+                                        possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="still-ques">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-9 text-center">
+                        <img class="img-fluid" src="./img/Avatar group.png" alt="Avatar">
+                        <h1>Still have questions?</h1>
+                        <p>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+                        <button class="email-button">Get in touch</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trusted">
+                <div class="row">
+                    <div class="col">
+                        <h1>Trusted By</h1>
+                        <div class="d-flex justify-content-around">
+                            <img class="img-fluid" src="./img/Fictional company logo.png" alt="Fictional">
+                            <img class="img-fluid" src="./img/Fictional company logo (1).png" alt="Fictional">
+                            <img class="img-fluid" src="./img/Fictional company logo (2).png" alt="Fictional">
+                            <img class="img-fluid" src="./img/Fictional company logo (3).png" alt="Fictional">
+                            <img class="img-fluid" src="./img/Fictional company logo (3).png" alt="Fictional">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-logo-block w-100 text-center">
+                    <img src="./img/Logo Full white.svg" alt="Logo">
+                </div>
+                <div class="footer-block d-flex justify-content-between">
+                    <p>© 2023 Atterra Labs. All rights reserved.</p>
+                    <div style="gap: 16px;" class="d-flex ">
+                        <p>Terms</p>
+                        <p>Privacy</p>
+                        <p>License</p>
+                        <p>Contact</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <!-- Login -->
+    <section id="login" class="window">
+        <img src="./img/Logo Full.svg" alt="Logo Full">
+        <h1>Log In</h1>
+        <form class="g-3 needs-validation d-flex flex-column" novalidate>
+            <div class="window-info">
+                <p>Email</p>
+                <input id="loginEmail" style="margin-bottom: 20px;" type="email">
+                <p>Password</p>
+                <input type="email">
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex under-window-info align-items-center">
+                    <input style="margin-right: 8px;" type="checkbox">
+                    <p>Remember for 30 days</p>
+                </div>
+                <p style="cursor: pointer;" id="forgot-password" class="frg-password">Forgot Password</p>
+            </div>
+            <button id="logInButtonWindow" class="window-button" type="button" disabled>Sign In</button>
+
+            <div class="d-flex justify-content-center gap-1">
+                <p style="color: var(--gray-600, #475467);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0;">Don’t have an account?</p>
+                <p style="color: var(--primary-700, #6941C6);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                font-weight: 600;
+                margin: 0;
+                cursor: pointer;">Sign Up</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Dowloads -->
+    <section id="dowloadsSignIN" class="window">
+        <img style="width: 143.843px; margin-bottom: 37px;" class="img-fluid" src="./img/Logo Full.svg" alt="Logo Full">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>

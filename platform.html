@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/platform_style.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <header>
+            <div class="main-menu">
+                <div class="logo-block">
+                    <img class="main-menu-logo" src="./img/logo.svg" alt="logo">
+                    <img class="logo-info" src="./img/text.svg" alt="text">
+                </div>
+                <div class="main-menu-block">
+                    <img src="./img/bar-chart-square.svg" alt="bar-chart-square">
+                    <p class="header-text">Dashboard</p>
+                </div>
+                <div class="main-menu-block active">
+                    <img src="./img/search-sm.svg" alt="search-sm">
+                    <p class="header-text">Search</p>
+                </div>
+                <div class="main-menu-block">
+                    <img src="./img/users.svg" alt="users">
+                    <p class="header-text">Campaigns</p>
+                </div>
+            </div>
+            <div class="acaunt-menu">
+                <div class="acaunt-menu-block">
+                    <img src="./img/settings.svg" alt="settings">
+                    <p class="header-text">Settings</p>
+                </div>
+                <div class="acaunt-menu-user">
+                    <div class="avatar-block">
+                        <img src="./img/user.svg" alt="user">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-data">
+                            <p class="name">Michael Cooper</p>
+                            <p class="email">mcooper@cooperinc.com</p>
+                        </div>
+                        <div class="user-avatar">
+                            <img class="log-out" src="./img/log-out.svg" alt="log-out">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-block">
+            <section class="search">
+                <h1 class="search-title">Search</h1>
+                <div class="search-tools">
+                    <div class="search-tools-properties">
+                        <p class="tools-properties">Properties </p>
+                        <img src="./img/chevron-down.svg" alt="chevron-down">
+                    </div>
+                    <div class="search-tools-address">
+                        <span><img src="./img/search-input.svg" alt="search-input"></span>
+                        <input id="search-input" type="text" placeholder="Enter Property Address">
+                    </div>
+                    <div class="search-tools-buttons">
+                        <button class="search-button">Search</button>
+                        <button class="filter-button"><span><img src="./img/filter-lines.svg" alt="filter-lines"></span>
+                            Filter</button>
+                    </div>
+                </div>
+            </section>
+            <div class="container-block">
+                <section class="filter">
+                    <div class="filter-title-block">
+                        <div class="header-filter-info">
+                            <h1 class="filter-title">Filter</h1>
+                            <div class="choose-filter">
+                                <p><span class="choose-filter-city">City:</span> Los Angeles, CA</p>
+                                <img class="choose-filter-img" src="./img/x-close.svg" alt="">
+                            </div>
+                            <div class="choose-filter">
+                                <p><span class="choose-filter-city">City:</span> Los Angeles, CA</p>
+                                <img class="choose-filter-img" src="./img/x-close.svg" alt="">
+                            </div>
+                            <div class="choose-filter">
+                                <p><span class="choose-filter-city">City:</span> Los Angeles, CA</p>
+                                <img class="choose-filter-img" src="./img/x-close.svg" alt="">
+                            </div>
+                        </div>
+                        <div id="openModalBtn" class="filter-clear">
+                            <p>Clear</p>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-variables">
+                            <li class="filter-variable">Location</li>
+                            <li class="filter-variable active">Property</li>
+                            <li class="filter-variable">Sale</li>
+                            <li class="filter-variable">Loan</li>
+                            <li class="filter-variable">Foreclosure</li>
+                        </div>
+                        <div class="context-blocks">
+                            <!-- Location block -->
+                            <div class="location-block context-block">
+                                <div class="block">
+                                    <p>Address</p>
+                                    <input type="text">
+                                </div>
+                                <div class="block">
+                                    <p>City</p>
+                                    <select name="city" id="city" class="select">
+                                        <option value="All">All</option>
+                                        <option value="New York">New York</option>
+                                        <option value="Tampa">Tampa</option>
+                                        <option value="California">California</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p>State</p>
+                                    <select name="state" id="state" class="select">
+                                        <option value="All">All</option>
+                                        <option value="California">California </option>
+                                        <option value="Texas">Texas </option>
+                                        <option value="Florida">Florida </option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p>Zip Code</p>
+                                    <select name="zip-code" id="zip-code" class="select">
+                                        <option value="All">All</option>
+                                        <option value="10001">10001</option>
+                                        <option value="90210">90210 </option>
+                                        <option value="75001">75001</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p>Neighborhood</p>
+                                    <select name="neighborhood" id="neighborhood" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Upper East Side">Upper East Side</option>
+                                        <option value="Venice Beach">Venice Beach</option>
+                                        <option value="The Heights">The Heights</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                            </div>
+                            <!-- Property block -->
+                            <div class="property-block context-block">
+                                <div class="block">
+                                    <p class="blockp">Property Type</p>
+                                    <select name="property-type" id="property-type" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Residential">Residential </option>
+                                        <option value="Commercial">Commercial </option>
+                                        <option value="Industrial">Industrial </option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p class="blockp">Sub Property <br>Type</p>
+                                    <select name="sub-property" id="sub-property" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Single Family Home">Single Family Home</option>
+                                        <option value="Office Building">Office Building </option>
+                                        <option value="Apartment Complex">Apartment Complex</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Year Built</p>
+                                    <div class="select-twice">
+                                        <p>No Min </p>
+                                        <img src="./img/calendar.svg" alt="calendar">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice">
+                                        <p>No Max </p>
+                                        <img id="calendar" src="./img/calendar.svg" alt="calendar">
+                                    </div>
+                                    <div id="calendarContainer" class="hidden">
+                                        <table class="calendar">
+                                            <tr>
+                                                <th>Sd</th>
+                                                <th>Md</th>
+                                                <th>Td</th>
+                                                <th>Wd</th>
+                                                <th>Td</th>
+                                                <th>Fd</th>
+                                                <th>Std</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                                <td>20</td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>22</td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td>26</td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Units</p>
+                                    <div class="select-twice-block">
+                                        <select name="units" id="units" class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2 </option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="">
+                                        <select name="units" id="units" class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8 </option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Building Size <br> (sqf)</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="lot-size" id="lot-size" class="select-twice">
+                                            <option value="All">No Min</option>
+                                            <option value="New York">700</option>
+                                            <option value="Tampa">800 </option>
+                                            <option value="California">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Lot Size (Acre)</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="lot-size" id="lot-size" class="select-twice">
+                                            <option value="All">No Min</option>
+                                            <option value="New York">700</option>
+                                            <option value="Tampa">800 </option>
+                                            <option value="California">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Lot Size (sqf)</p>
+                                    <div class="select-twice-block">
+                                        <select name="lot-size" id="lot-size" class="select-twice">
+                                            <option value="All">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="lot-size" id="lot-size" class="select-twice">
+                                            <option value="All">No Min</option>
+                                            <option value="New York">700</option>
+                                            <option value="Tampa">800 </option>
+                                            <option value="California">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sale block -->
+                            <div class="sale-block context-block">
+                                <div class="block-twice">
+                                    <p class="twice-title">Sale Date</p>
+                                    <div class="select select-three">
+                                        <p>All </p>
+                                        <img src="./img/chevron-down.svg" alt="chevron">
+                                    </div>
+                                    <p class="or">or</p>
+                                    <div class="select select-three">
+                                        <p>No Min </p>
+                                        <img src="./img/calendar.svg" alt="calendar">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select select-three">
+                                        <p>No Max </p>
+                                        <img src="./img/calendar.svg" alt="calendar">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Sale Price</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Arm’s Length <br>Transaction</p>
+                                    <div class="radio-block">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="Yes" value="1" name="radioBox">
+                                            <label for="Yes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="No" value="2" name="radioBox">
+                                            <label for="No">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <p>Property Type</p>
+                                    <select name="sub-property" id="sub-property" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Single Family Home">Single Family Home</option>
+                                        <option value="Office Building">Office Building </option>
+                                        <option value="Apartment Complex">Apartment Complex</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p>Description of <br>Sale</p>
+                                    <select name="sub-property" id="sub-property" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Single Family Home">Single Family Home</option>
+                                        <option value="Office Building">Office Building </option>
+                                        <option value="Apartment Complex">Apartment Complex</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                            </div>
+                            <!-- Loan block -->
+                            <div class="loan-block context-block">
+                                <div class="block-twice">
+                                    <p class="twice-title">Sale Price</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <p>Property Type</p>
+                                    <select name="property-type" id="property-type" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Upper East Side">Upper East Side</option>
+                                        <option value="Venice Beach">Venice Beach</option>
+                                        <option value="The Heights">The Heights</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block">
+                                    <p>Description of <br>Sale</p>
+                                    <select name="description-sale" id="description-sale" class="select">
+                                        <option value="All">All</option>
+                                        <option value="Upper East Side">Upper East Side</option>
+                                        <option value="Venice Beach">Venice Beach</option>
+                                        <option value="The Heights">The Heights</option>
+                                    </select>
+                                    <img class="arrow-icon" src="./img/chevron-down.svg">
+                                </div>
+                                <div class="block-empty">
+                                    <p></p>
+                                    <div class="select">
+                                    </div>
+                                </div>
+                                <div class="block-empty">
+                                    <p></p>
+                                    <div class="select">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Foreclosure block -->
+                            <div class="foreclosure-block context-block active">
+                                <div class="block-twice">
+                                    <p class="twice-title">Foreclosure</p>
+                                    <div class="radio-block">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="ForYes" value="3"
+                                                name="radioBoxFor">
+                                            <label for="ForYes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="ForNo" value="4"
+                                                name="radioBoxFor">
+                                            <label for="ForNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Notice of Default <br>(NOD)</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-default" id="notice-default" class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-default" id="notice-default" class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Notice of Trustee <br>Sale (NTS)</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-trustee" id="notice-trustee" class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-trustee" id="notice-trustee" class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Is REO</p>
+                                    <div class="radio-block">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="ReoYes" value="1"
+                                                name="radioBox">
+                                            <label for="ReoYes">Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="ReoNo" value="2"
+                                                name="radioBox">
+                                            <label for="ReoNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Auction Date</p>
+                                    <div class="select-twice-block">
+                                        <select name="auction-date" id="auction-date" class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="auction-date" id="auction-date" class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                                <div class="block-twice">
+                                    <p class="twice-title">Notice of Trustee <br>Sale (NTS)</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-trustee" id="notice-trustee" class="select-twice">
+                                            <option value="No Min">No Min</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200 </option>
+                                            <option value="300">300</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                    <p class="line">-</p>
+                                    <div class="select-twice-block">
+                                        <select name="notice-trustee" id="notice-trustee" class="select-twice">
+                                            <option value="No Max">No Max</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800 </option>
+                                            <option value="900">900</option>
+                                        </select>
+                                        <img class="arrow-icon" src="./img/chevron-down.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-footer">
+                            <button class="cancel">Cancel</button>
+                            <button class="apply">Apply</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- container -->
+                <div class="container">
+                    <section class="contacts">
+                        <div class="contacts-title">
+                            <h3 class="title">Contacts</h3>
+                        </div>
+                        <div class="contacts-info">
+                            <div class="contact-search">
+                                <div class="search-tools-address">
+                                    <span><img src="./img/search-input.svg" alt="search-input"></span>
+                                    <input type="text" placeholder="Enter Property Address">
+                                </div>
+                                <div class="contacts-buttons">
+                                    <button id="contactsCompany" class="create-campaign">Create Campaign</button>
+                                    <button id="addCompany" class="add-to-campaign">Add To Campaign</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-users">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="happy" name="happy"
+                                                value="yes">
+                                            <label for="happy">Name</label>
+                                        </th>
+                                        <th>Entity Num</th>
+                                        <th>Org Name</th>
+                                        <th>First Name</th>
+                                        <th>Middle Name</th>
+                                        <th>Last Name</th>
+                                        <th class="physical">Physical Address</th>
+                                        <th class="agent">Agent Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox1">
+                                            <label for="checkbox1">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>1234567890</td>
+                                        <td>Org Name</td>
+                                        <td>Ralph</td>
+                                        <td>--</td>
+                                        <td>Edwards</td>
+                                        <td>200 N 16th St, Philadelphia, PA 19102</td>
+                                        <td class="type">
+                                            <p>Type</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox2">
+                                            <label for="checkbox2">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>1234567890</td>
+                                        <td>Org Name</td>
+                                        <td>Ralph</td>
+                                        <td>--</td>
+                                        <td>Edwards</td>
+                                        <td>200 N 16th St, Philadelphia, PA 19102</td>
+                                        <td class="type">
+                                            <p>Type</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox3">
+                                            <label for="checkbox3">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>1234567890</td>
+                                        <td>Org Name</td>
+                                        <td>Ralph</td>
+                                        <td>--</td>
+                                        <td>Edwards</td>
+                                        <td>200 N 16th St, Philadelphia, PA 19102</td>
+                                        <td class="type">
+                                            <p>Type</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox4">
+                                            <label for="checkbox4">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>1234567890</td>
+                                        <td>Org Name</td>
+                                        <td>Ralph</td>
+                                        <td>--</td>
+                                        <td>Edwards</td>
+                                        <td>200 N 16th St, Philadelphia, PA 19102</td>
+                                        <td class="type">
+                                            <p>Type</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox5">
+                                            <label for="checkbox5">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>1234567890</td>
+                                        <td>Org Name</td>
+                                        <td>Ralph</td>
+                                        <td>--</td>
+                                        <td>Edwards</td>
+                                        <td>200 N 16th St, Philadelphia, PA 19102</td>
+                                        <td class="type">
+                                            <p>Type</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="contacts-footer">
+                            <div class="show-block">
+                                <p>Show</p>
+                                <div class="mains">
+                                    <p>5</p>
+                                    <img src="./img/chevron-down.svg" alt="chevron">
+                                </div>
+                            </div>
+                            <div class="contacts-numbers">
+                                <div class="pagination previous">
+                                    <img src="./img/arrow-left.svg" alt="arrow">
+                                    <p>Previous</p>
+                                </div>
+                                <p class="pagination active num">1</p>
+                                <p class="pagination num">2</p>
+                                <p class="pagination num">3</p>
+                                <p class="pagination num">...</p>
+                                <p class="pagination num">8</p>
+                                <p class="pagination num">9</p>
+                                <p class="pagination num">10</p>
+                                <div class="pagination next">
+                                    <p>Next</p>
+                                    <img src="./img/arrow-right.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contacts">
+                        <div class="contacts-title">
+                            <h3 class="title">Assessor</h3>
+                        </div>
+                        <div class="contacts-info">
+                            <div class="contact-search">
+                                <div class="search-tools-address">
+                                    <span><img src="./img/search-input.svg" alt="search-input"></span>
+                                    <input type="text" placeholder="Search">
+                                </div>
+                                <div class="contacts-buttons">
+                                    <button class="create-campaign">Create Campaign</button>
+                                    <button class="add-to-campaign">Add To Campaign</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contacts-users">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox">
+                                            <label for="checkbox">Mr. Ralph Edwards</label>
+                                        </th>
+                                        <th>Deed Owner2</th>
+                                        <th>Deed Owner3</th>
+                                        <th>Deed Owner4</th>
+                                        <th>Party Owner1</th>
+                                        <th>Party Owner2</th>
+                                        <th>House Number</th>
+                                        <th>Street</th>
+                                        <th>City</th>
+                                        <th>State</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox1">
+                                            <label for="checkbox1">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>200 N</td>
+                                        <td>16th St</td>
+                                        <td>Philadelphia</td>
+                                        <td>PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox2">
+                                            <label for="checkbox2">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>200 N</td>
+                                        <td>16th St</td>
+                                        <td>Philadelphia</td>
+                                        <td>PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox3">
+                                            <label for="checkbox3">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>200 N</td>
+                                        <td>16th St</td>
+                                        <td>Philadelphia</td>
+                                        <td>PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox4">
+                                            <label for="checkbox4">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>200 N</td>
+                                        <td>16th St</td>
+                                        <td>Philadelphia</td>
+                                        <td>PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contacts-name">
+                                            <input type="checkbox" class="custom-checkbox" id="checkbox5">
+                                            <label for="checkbox5">Mr. Ralph Edwards</label>
+                                        </td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>200 N</td>
+                                        <td>16th St</td>
+                                        <td>Philadelphia</td>
+                                        <td>PA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="contacts-footer">
+                            <div class="show-block">
+                                <p>Show</p>
+                                <div class="mains">
+                                    <p>5</p>
+                                    <img src="./img/chevron-down.svg" alt="chevron">
+                                </div>
+                            </div>
+                            <div class="contacts-numbers">
+                                <div class="pagination previous">
+                                    <img src="./img/arrow-left.svg" alt="arrow">
+                                    <p>Previous</p>
+                                </div>
+                                <p class="pagination active num">1</p>
+                                <p class="pagination num">2</p>
+                                <p class="pagination num">3</p>
+                                <p class="pagination num">...</p>
+                                <p class="pagination num">8</p>
+                                <p class="pagination num">9</p>
+                                <p class="pagination num">10</p>
+                                <div class="pagination next">
+                                    <p>Next</p>
+                                    <img src="./img/arrow-right.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contacts">
+                        <div class="no-contacts-info">
+                            <div class="contacts-info-block">
+                                <img src="./img/search-lg.svg" alt="search-lg">
+                            </div>
+                            <h2>No Contacts</h2>
+                            <p>Please use search or filter</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="close-filter">
+        <!-- Filter modal window -->
+        <div id="filterModal" class="filter-modal">
+            <div class="modal-content">
+                <span class="close-filter close"><img src="./img/x-close.svg" alt="close"></span>
+                <h2>Close Filter</h2>
+                <p>Do you want to apply or discard filter?</p>
+                <div class="madal-filter-buttons">
+                    <button class="filter-modal-cancel">Cancel</button>
+                    <button class="filter-modal-apply">Apply</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compaining modal window -->
+        <div id="compainingModal" class="compaining-modal">
+            <div class="compaining-content">
+                <span id="close-compaining" class="close-compaining close"><img src="./img/x-close.svg"
+                        alt="close"></span>
+                <h2>Create Campaign</h2>
+                <p>Name*</p>
+                <input class="compaining-input" type="text">
+                <div class="madal-filter-buttons">
+                    <button id="compaining-close" class="filter-modal-cancel">Cancel</button>
+                    <button id="openBtn" class="compaining-modal-apply">Create</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add compaining modal window -->
+        <div id="addCompainingModal" class="add-Compaining-modal">
+            <div class="add-Compaining-content">
+                <span id="close-add-Compaining" class="add-Close-compaining close"><img src="./img/x-close.svg"
+                        alt="close"></span>
+                <h2>Add To Campaign</h2>
+                <div class="add-Compaining-search">
+                    <span><img src="./img/search-input.svg" alt="search"></span>
+                    <input class="add-Compaining-input" type="text" placeholder="Search">
+                </div>
+                <div class="addCompainingCheckbox">
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 1</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 2</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 3</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 4</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 5</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 6</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 7</label>
+                    </div>
+                    <div class="add-checkbox-block">
+                        <input type="checkbox" class="add-checkbox">
+                        <label>Campaign 8</label>
+                    </div>
+                </div>
+                <div class="madal-filter-buttons">
+                    <button id="compaining-close" class="filter-modal-cancel">Cancel</button>
+                    <button id="add-compaining" class="compaining-modal-apply">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- create -->
+        <div id="sidePanel">
+            <img class="verify" src="./img/featured.svg" alt="featured">
+            <div class="side-panel-info">
+                <h3>Successfully created campaign</h3>
+                <p> {Name of Campaign} was successfully created with {Number of Contacts} selected contacts</p>
+                <p class="view">View Campaign</p>
+            </div>
+            <img src="./img/x-close.svg" id="closeBtn">
+        </div>
+
+        <!-- update -->
+        <div id="sidePanelUpdate">
+            <img class="verify" src="./img/featured.svg" alt="featured">
+            <div class="side-panel-info">
+                <h3>{Name of Campaign} was successfully updated</h3>
+                <p> {Number of Contacts} new contacts were added</p>
+                <p class="view">View Campaign</p>
+            </div>
+            <img src="./img/x-close.svg" id="closeBtnAdd">
+        </div>
+
+        <!-- loading -->
+        <div class="loader-container">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <script src="./js/platform_script.js"></script>
+</body>
+
+</html>

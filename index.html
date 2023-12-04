@@ -340,7 +340,7 @@
                             </div>
                             <div class="accordion">
                                 <div class="question-block">
-                                    <h2>How does billing work?</h2>
+                                    <h2>How do I change my account email?</h2>
                                     <div class="question-block-img">
                                         <img class="quest-img" src="/img/plus-circle.svg" alt="plus-circle">
                                     </div>
@@ -450,6 +450,99 @@
             <div class="progress"></div>
         </div>
     </section>
+
+    <!-- Reset Password -->
+    <section id="resetPasswordWindow" class="window">
+        <img src="./img/Featured icon.svg" alt="Logo Full">
+        <h1>Forgot password?</h1>
+        <p class="resetPassword-info">No worries, we’ll send you reset instructions.</p>
+        <form class="g-3 needs-validation d-flex flex-column" novalidate>
+            <div class="window-info">
+                <p>Email</p>
+                <input id="resetPasswordInput" style="margin-bottom: 20px;" type="email" placeholder="Enter your email">
+            </div>
+            <button id="resetPasswordButton" class="window-button" type="button" disabled>Reset Password</button>
+
+            <div class="d-flex justify-content-center gap-1">
+                <p style="color: var(--gray-600, #475467);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                margin: 0;"> <span><img style="margin: 0 5px 0 0;" src="./img/Back-icon.svg"
+                            alt="Back-icon"></span>Back to log In</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Email about password -->
+    <section id="email-reset-password" class="window">
+        <div style="height: 544px;">
+            <div style="padding: 24px;" class="w-100">
+                <img src="./img/Logo Full.svg" alt="Logo Full">
+            </div>
+            <div class="info-block-pussword">
+                <p>Hi John,<br><br>
+                    You have requested to reset your Atterra password. Please click the button below to set a new
+                    password
+                    for
+                    <span style="color: var(--primary-700, #6941C6); font-weight: 500;">johndigweed@jdinc.com</span>
+                </p>
+                <button id="reset-password-email-button">Reset Password</button>
+            </div>
+            <div class="footer-info">
+                <p>If you didn't mean to change your password, then you can ignore this email. Your password will not
+                    change.
+                </p>
+                <p> © 2024 Atterra Labs, PO BOX 10975, Zephyr Cove, NV 89448</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Set new password password -->
+    <section id="add-new-password-window" class="window">
+        <img src="./img/Featured icon.svg" alt="Logo Full">
+        <h1>Set new password</h1>
+        <p class="resetPassword-info">Your new password must be different to previously used passwords.</p>
+        <form class="g-3 needs-validation d-flex flex-column" novalidate>
+            <div class="window-info">
+                <p>Password</p>
+                <input class="new-password-input" type="password" minlength="8">
+                <p style="margin: 6px 0 20px 0;
+                color: var(--gray-600, #475467);font-size: 14px; font-style: normal;font-weight: 400;">Must be at least
+                    8 characters.</p>
+                <p>Password</p>
+                <input class="new-password-input" type="password">
+            </div>
+            <button id="resetNewPasswordButton" class="window-button" type="button" disabled>Reset Password</button>
+
+            <div class="d-flex justify-content-center gap-1">
+                <p style="color: var(--gray-600, #475467);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                margin: 0;"> <span><img style="margin: 0 5px 0 0;" src="./img/Back-icon.svg"
+                            alt="Back-icon"></span>Back to log In</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Succses set new password -->
+    <section id="succses-set-new-password" class="window">
+        <img src="./img/New password icon.svg" alt="Logo Full">
+        <h1>Password reset</h1>
+        <p class="resetPassword-info">Your password has been successfully reset. Click below to log in magically.</p>
+        <button id="resetNewPasswordLoginButton" class="window-button active" type="button">Log In</button>
+    </section>
+
+    <iframe id="platform" style="display: none;
+    width: 100%;
+    height:100vh;" src="./platform.html"></iframe>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
